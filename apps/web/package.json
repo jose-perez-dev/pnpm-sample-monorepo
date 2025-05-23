@@ -14,11 +14,14 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@bet-tracker/eslint-config": "workspace:*",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "eslint-plugin-react": "^7.37.5",

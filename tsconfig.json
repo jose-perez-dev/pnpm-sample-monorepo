@@ -2,7 +2,7 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "paths": {
-      "@bet-tracker/ui/*": ["packages/ui/src/*"]
+      "@bet-tracker/*": ["packages/*"]
     }
   }
 }
