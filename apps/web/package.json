@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "lint:code": "NEXT_LINT=true next lint -d src",
+    "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input",
+    "lint": "pnpm lint:code && pnpm lint:css && pnpm typecheck",
     "start": "next start",
-    "lint": "next lint",
-    "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "15.3.2",
