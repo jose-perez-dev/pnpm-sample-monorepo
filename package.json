@@ -13,7 +13,7 @@
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
     "eslint": "8.57.0",
-    "stylelint": "^15.0.0",
+    "stylelint": "^15.11.0",
     "turbo": "^2.5.3"
   }
 }

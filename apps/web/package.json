@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input"
   },
   "dependencies": {
     "next": "15.3.2",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@bet-tracker/eslint-config": "workspace:*",
+    "@bet-tracker/stylelint-config": "workspace:*",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
