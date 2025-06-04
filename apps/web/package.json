@@ -9,7 +9,9 @@
     "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input",
     "lint": "pnpm lint:code && pnpm lint:css && pnpm typecheck",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "jest --coverage --colors",
+    "test:watch": "pnpm test --watch"
   },
   "dependencies": {
     "next": "15.3.2",
@@ -20,17 +22,20 @@
     "@bet-tracker/eslint-config": "workspace:*",
     "@bet-tracker/stylelint-config": "workspace:*",
     "@eslint/eslintrc": "^3",
+    "@swc/jest": "^0.2.38",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
+    "dotenv": "^16.5.0",
     "eslint": "^8.56.0",
     "eslint-config-next": "15.3.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "stylelint": "14.16.0",
+    "swc_mut_cjs_exports": "^10.7.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -73,7 +73,70 @@ Internally, the `lint:web` command runs:
 
 ## 🧪 Testing
 
-*(To be added in the future when test setup is integrated)*
+This monorepo uses [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing React components and utilities.
+
+### Test setup
+
+Jest is configured at the root of the monorepo (`jest.config.js`) with project references to each package/app.
+
+Each project can extend a shared base config from `configs/jest/jest.config.base.js`.
+
+There are two special setup files:
+
+* `jest.setup.ts`: Initializes testing environment, e.g. adds `@testing-library/jest-dom`.
+* `jest.env.js`: Loads environment variables from `.env.example` for consistent test behavior.
+
+Example from `jest.setup.ts`:
+
+```ts
+import '@testing-library/jest-dom';
+
+Object.defineProperty(Intl, 'DateTimeFormat', {
+  writable: true,
+  value: () => ({
+    resolveOptions: jest.fn(() => ({
+      timeZone: 'America/New_York',
+    })),
+  }),
+});
+
+Object.defineProperty(window, 'matchMedia', {
+  writable: true,
+  value: jest.fn().mockImplementation((query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+  })),
+});
+```
+
+### Running tests
+
+From the root:
+
+```bash
+pnpm test:web
+```
+
+Or filtered:
+
+```bash
+pnpm --filter=web test
+```
+
+To run in watch mode:
+
+```bash
+pnpm --filter=web test -- --watch
+```
+
+To run tests for all packages:
+
+```bash
+pnpm test
+```
+
+> ✅ Uses `--coverage` to measure coverage thresholds defined in config.
 
 ## 🧰 Useful Scripts
 
@@ -82,6 +145,7 @@ pnpm dev:web           # Start the web app
 pnpm build             # Build all packages and apps
 pnpm lint              # Global lint
 pnpm typecheck         # Global TypeScript type checking
+pnpm test              # Global test
 ```
 
 ## 🤝 Contributions

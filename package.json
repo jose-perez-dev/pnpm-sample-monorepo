@@ -8,15 +8,25 @@
     "dev:web": "pnpm --filter=web dev",
     "build:web": "pnpm --filter=web build",
     "start:web": "pnpm --filter=web start",
-    "lint:web": "pnpm --filter=web lint"
+    "lint:web": "pnpm --filter=web lint",
+    "test:web": "pnpm --filter=web test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
     "eslint": "8.57.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "30.0.0-beta.3",
+    "jest-silent-reporter": "^0.6.0",
     "stylelint": "^15.11.0",
+    "ts-jest": "^29.3.4",
     "turbo": "^2.5.3"
   }
 }
