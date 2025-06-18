@@ -5,10 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev:web": "pnpm --filter=web dev",
     "build:web": "pnpm --filter=web build",
-    "start:web": "pnpm --filter=web start",
+    "clean:tests:root": "pnpm remove jest @testing-library/react @testing-library/jest-dom ts-jest @types/jest",
+    "clean:tests:web": "pnpm --filter=web remove jest @testing-library/react @testing-library/jest-dom ts-jest @types/jest @swc/jest",
+    "clean:tests": "node scripts/remove-tests.js && pnpm clean:tests:root && pnpm clean:tests:web",
+    "dev:web": "pnpm --filter=web dev",
     "lint:web": "pnpm --filter=web lint",
+    "start:web": "pnpm --filter=web start",
     "test:web": "pnpm --filter=web test"
   },
   "keywords": [],
