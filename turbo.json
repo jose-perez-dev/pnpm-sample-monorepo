@@ -5,11 +5,21 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "topo": {
+      "dependsOn": ["^topo"]
     },
-    "lint": {},
-    "test": {}
-  }
+    "lint": {
+      "dependsOn": ["topo"]
+    },
+    "test": {
+      "dependsOn": ["topo"]
+    }
+  },
+  "globalDependencies": [
+    "package.json",
+    "tsconfig.json",
+    "tsconfig.base.json",
+    "jest.config.js",
+    ".eslintrc.js"
+  ]
 }
