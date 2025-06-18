@@ -86,30 +86,6 @@ There are two special setup files:
 * `jest.setup.ts`: Initializes testing environment, e.g. adds `@testing-library/jest-dom`.
 * `jest.env.js`: Loads environment variables from `.env.example` for consistent test behavior.
 
-Example from `jest.setup.ts`:
-
-```ts
-import '@testing-library/jest-dom';
-
-Object.defineProperty(Intl, 'DateTimeFormat', {
-  writable: true,
-  value: () => ({
-    resolveOptions: jest.fn(() => ({
-      timeZone: 'America/New_York',
-    })),
-  }),
-});
-
-Object.defineProperty(window, 'matchMedia', {
-  writable: true,
-  value: jest.fn().mockImplementation((query) => ({
-    matches: false,
-    media: query,
-    onchange: null,
-  })),
-});
-```
-
 ### Running tests
 
 From the root:
@@ -118,17 +94,13 @@ From the root:
 pnpm test:web
 ```
 
-Or filtered:
-
-```bash
-pnpm --filter=web test
-```
-
 To run in watch mode:
 
 ```bash
 pnpm --filter=web test -- --watch
 ```
+
+⚙️ If you add more tests in different apps or packages, make sure to add the corresponding test command in each package’s package.json scripts section so you can run tests individually or from the root.
 
 To run tests for all packages:
 
@@ -147,6 +119,23 @@ pnpm lint              # Global lint
 pnpm typecheck         # Global TypeScript type checking
 pnpm test              # Global test
 ```
+
+## 🧹 Cleaning Tests and Testing Dependencies
+
+If you want a lighter version of the app without any testing setup or dependencies, you can run the following command to remove all test files and testing-related dependencies:
+
+```bash
+pnpm clean:tests
+```
+
+This command will:
+
+- Delete all test files (e.g., *.spec.ts, *.test.ts).
+- Remove all __mocks__ folders and their contents.
+- Remove testing dependencies from package.json in the root and all affected packages/apps.
+- Delete Jest configuration files (jest.config.js, jest.setup.ts, etc.).
+
+> 💡 Use this command if you prefer to deploy or work without the overhead of testing tools.
 
 ## 🤝 Contributions
 
