@@ -1,7 +1,7 @@
 module.exports = {
     extends: [
-      "stylelint-config-standard",
-      "stylelint-config-standard-scss",
+      "stylelint-config-recommended",
+      "stylelint-config-recommended-scss",
       "stylelint-config-tailwindcss",
     ],
     plugins: [
@@ -18,8 +18,6 @@ module.exports = {
       "scss/at-import-partial-extension-blacklist": ["scss"],
       "scss/dollar-variable-pattern": "^([a-z][a-z0-9]*)$",
       "scss/percent-placeholder-pattern": "^([a-z][a-z0-9]*)$",
-      "selector-anb-no-unmatchable": null,
-      "selector-anb-no-unmatchable": null,
     }
   };
   
