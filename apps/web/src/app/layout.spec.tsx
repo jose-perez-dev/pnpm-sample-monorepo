@@ -18,12 +18,10 @@ jest.mock('next/font/google', () => ({
 }));
 
 describe('RootLayout', () => {
-  it('should layout be defined', () => {
-    expect(
-      RootLayout({
-        children: <div>test</div>,
-        params: { lang: 'en' },
-      }),
-    ).toBeDefined();
-  });
+  it('should layout be defined', () => expect(
+    RootLayout({
+      children: <div>test</div>,
+      params: Promise.resolve({ lang: 'en' }),
+    }),
+  ).toBeDefined());
 });
