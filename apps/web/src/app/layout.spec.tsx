@@ -1,5 +1,4 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
 
 import RootLayout from './layout';
 
@@ -24,7 +23,7 @@ describe('RootLayout', () => {
       RootLayout({
         children: <div>test</div>,
         params: { lang: 'en' },
-      })
+      }),
     ).toBeDefined();
   });
 });
