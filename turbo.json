@@ -18,7 +18,7 @@
   "globalDependencies": [
     "package.json",
     "tsconfig.json",
-    "tsconfig.base.json",
+    "tsconfig.test.json",
     "jest.config.js",
     ".eslintrc.js"
   ]
