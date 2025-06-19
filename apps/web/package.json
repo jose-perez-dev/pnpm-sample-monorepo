@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint:code": "NEXT_LINT=true next lint -d src",
-    "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input",
+    "lint:css": "stylelint \"src/**/*.{style,module}*\"",
     "lint": "pnpm lint:code && pnpm lint:css && pnpm typecheck",
     "start": "next start",
     "typecheck": "tsc --noEmit",
