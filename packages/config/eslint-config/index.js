@@ -5,8 +5,6 @@ module.exports = {
     extends: [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended"
     ],
     parserOptions: {
       ecmaVersion: 2022,
@@ -22,7 +20,7 @@ module.exports = {
     },
     rules: {
       "semi": ["error", "always"],
-      "quotes": ["error", "double"],
+      "quotes": ["error", "single"],
       "indent": ["error", 2],
       "comma-dangle": ["error", "always-multiline"],
       "@typescript-eslint/explicit-module-boundary-types": "off"
