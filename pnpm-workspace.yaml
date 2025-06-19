@@ -2,6 +2,8 @@ packages:
   - apps/*
   - packages/*
   - packages/config/*
+ignoredBuiltDependencies:
+  - '@swc/core'
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - sharp
