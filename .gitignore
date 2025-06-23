@@ -36,3 +36,7 @@ coverage
 # Generate output
 dist
 build/
+
+# Storybook
+*storybook.log
+storybook-static
