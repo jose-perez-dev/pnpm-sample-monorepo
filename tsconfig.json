@@ -19,14 +19,15 @@
     "noImplicitThis": true, /* Enable error reporting when 'this' is given the type 'any'. */
     "noUnusedParameters": true, /* Raise an error when a function parameter isn't read. */
     "outDir": "build", /* Specify an output folder for all emitted files. */
-    "paths": {}, /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "paths": {
+      "@bet-tracker/ui/*": ["./packages/ui/src/*"],
+    }, /* Specify a set of entries that re-map imports to additional lookup locations. */
     "resolveJsonModule": true, /* Enable importing .json files. */
     "skipLibCheck": true, /* Skip type checking all .d.ts files. */
     "strict": true, /* Enable all strict type-checking options. */
     "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined'. */
     "target": "ESNext", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "types": ["@testing-library/jest-dom"],
-
   },
   "exclude": ["node_modules", "**/node_modules", "**/__mocks__/*.ts*"],
   "include": [
