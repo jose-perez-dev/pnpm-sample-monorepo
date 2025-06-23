@@ -8,6 +8,7 @@
     "lint:code": "NEXT_LINT=true next lint -d src",
     "lint:css": "stylelint \"src/**/*.{style,module}*\"",
     "lint": "pnpm lint:code && pnpm lint:css && pnpm typecheck",
+    "prod": "pnpm build && pnpm start",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "jest --coverage --colors",
