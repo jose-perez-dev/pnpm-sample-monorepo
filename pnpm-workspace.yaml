@@ -4,6 +4,7 @@ packages:
   - packages/config/*
 ignoredBuiltDependencies:
   - '@swc/core'
+  - esbuild
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - sharp

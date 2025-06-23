@@ -1,0 +1,8 @@
+{
+  "name": "@bet-tracker/tailwind-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.ts",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0"
+}
