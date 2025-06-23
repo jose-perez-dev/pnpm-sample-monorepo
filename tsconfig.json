@@ -24,7 +24,9 @@
     "skipLibCheck": true, /* Skip type checking all .d.ts files. */
     "strict": true, /* Enable all strict type-checking options. */
     "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined'. */
-    "target": "ESNext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "ESNext", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "types": ["@testing-library/jest-dom"],
+
   },
   "exclude": ["node_modules", "**/node_modules", "**/__mocks__/*.ts*"],
   "include": [

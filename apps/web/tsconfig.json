@@ -9,7 +9,6 @@
     ],
     "strictNullChecks": true,
     "allowJs": true,
-    "types": ["@testing-library/jest-dom"],
   },
   "include": [
     "**/*.d.ts",
