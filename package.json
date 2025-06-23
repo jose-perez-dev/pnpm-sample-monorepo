@@ -10,8 +10,11 @@
     "clean:tests:web": "pnpm --filter=web remove jest @testing-library/react @testing-library/jest-dom ts-jest @types/jest @swc/jest",
     "clean:tests": "node scripts/remove-tests.js && pnpm clean:tests:root && pnpm clean:tests:web",
     "dev:web": "pnpm --filter=web dev",
+    "lint:ui": "pnpm --filter=@bet-tracker/ui lint",
     "lint:web": "pnpm --filter=web lint",
     "start:web:dev": "pnpm --filter=web dev",
+    "story:ui": "pnpm --filter=@bet-tracker/ui storybook",
+    "story:build:ui": "pnpm --filter=@bet-tracker/ui build-storybook",
     "test:web": "pnpm --filter=web test"
   },
   "keywords": [],
