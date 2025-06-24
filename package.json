@@ -12,6 +12,7 @@
     "clean:tests": "node scripts/remove-tests.js && pnpm clean:tests:root && pnpm clean:tests:web",
     "clean": "pnpm -r run clean",
     "dev:web": "pnpm --filter=web dev",
+    "lint:all": "pnpm lint:web && pnpm lint:ui",
     "lint:ui": "pnpm --filter=@pnpm-sample-monorepo/ui lint",
     "lint:web": "pnpm --filter=web lint",
     "start:web:dev": "pnpm --filter=web dev",
