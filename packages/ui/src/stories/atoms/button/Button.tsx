@@ -21,7 +21,7 @@ function Button ({
         {
           [styles['storybook-button--primary']]: primary,
           [styles['storybook-button--secondary']]: !primary,
-        }
+        },
       )}
       style={{ backgroundColor }}
       {...props}
