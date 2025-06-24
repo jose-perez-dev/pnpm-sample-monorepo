@@ -1,5 +1,9 @@
 # 🧪 PNPM Sample Monorepo Example
 
+[![Build Status](https://github.com/jose-perez-dev/bet-tracker/actions/workflows/tests.yml/badge.svg)](https://github.com/jose-perez-dev/bet-tracker/actions/workflows/tests.yml)
+
+
+
 This is a **sample monorepo setup** using [PNPM Workspaces](https://pnpm.io/workspaces), [TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html), and [Turborepo](https://turbo.build/repo).  
 It provides a solid starting point for scalable frontend applications.
 
