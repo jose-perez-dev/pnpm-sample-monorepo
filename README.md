@@ -1,15 +1,14 @@
 # 🧪 PNPM Sample Monorepo Example
 
-[![Build Status](https://github.com/jose-perez-dev/bet-tracker/actions/workflows/tests.yml/badge.svg)](https://github.com/jose-perez-dev/bet-tracker/actions/workflows/tests.yml)
-
+[![Build Status](https://github.com/jose-perez-dev/pnpm-sample-monorepo/actions/workflows/tests.yml/badge.svg)](https://github.com/jose-perez-dev/pnpm-sample-monorepo/actions/workflows/tests.yml)
 
 
 This is a **sample monorepo setup** using [PNPM Workspaces](https://pnpm.io/workspaces), [TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html), and [Turborepo](https://turbo.build/repo).  
 It provides a solid starting point for scalable frontend applications.
 
-Bet tracker consists of several sub-packages
+Pnpm Sample Monorepo consists of several sub-packages
 
-* [ui][ui] - Base React components for the Bet Tracker web app
+* [ui][ui] - Base React components for the PNPM Sample Monorepo web app
 * [eslint config][eslint] - Eslint base utilitie package used across the monorepo
 * [stylelint config][stylelint] - Base Stylelint configuration used across the monorepo
 * [tailwind config][tailwind] - Base Tailwind CSS configuration used across the monorepo
@@ -44,7 +43,7 @@ pnpm dev:web
 ## 📦 Monorepo Structure
 
 ```text
-bet-tracker/
+pnpm-sample-monorepo/
 ├── apps/
 │   └── web/         # Frontend app (Next.js)
 ├── packages/
@@ -106,7 +105,7 @@ pnpm test:web
 To run in watch mode:
 
 ```bash
-pnpm --filter=web test -- --watch
+pnpm test:watch
 ```
 
 ⚙️ If you add more tests in different apps or packages, make sure to add the corresponding test command in each package’s package.json scripts section so you can run tests individually or from the root.
@@ -114,7 +113,7 @@ pnpm --filter=web test -- --watch
 To run tests for all packages:
 
 ```bash
-pnpm test
+pnpm test:all
 ```
 
 > ✅ Uses `--coverage` to measure coverage thresholds defined in config.
@@ -122,11 +121,10 @@ pnpm test
 ## 🧰 Useful Scripts
 
 ```bash
-pnpm dev:web           # Start the web app
-pnpm build             # Build all packages and apps
-pnpm lint              # Global lint
-pnpm typecheck         # Global TypeScript type checking
-pnpm test              # Global test
+pnpm start:web:dev           # Start the web app
+pnpm build:web               # Build the web app
+pnpm lint:web                # Lint the web app
+pnpm test:web                # Tests the web app
 ```
 
 ## 🧹 Cleaning Tests and Testing Dependencies
@@ -151,8 +149,8 @@ This command will:
 This is a sample repository, but if you'd like to suggest improvements, PRs are welcome!
 
 
-[ui]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/ui
-[eslint]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/eslint-config
-[stylelint]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/stylelint-config
-[tailwind]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/tailwind-config
-[web]: https://github.com/jose-perez-dev/bet-tracker/tree/main/apps/web
+[ui]: https://github.com/jose-perez-dev/pnpm-sample-monorepo/tree/main/packages/ui
+[eslint]: https://github.com/jose-perez-dev/pnpm-sample-monorepo/tree/main/packages/config/eslint-config
+[stylelint]: https://github.com/jose-perez-dev/pnpm-sample-monorepo/tree/main/packages/config/stylelint-config
+[tailwind]: https://github.com/jose-perez-dev/pnpm-sample-monorepo/tree/main/packages/config/tailwind-config
+[web]: https://github.com/jose-perez-dev/pnpm-sample-monorepo/tree/main/apps/web

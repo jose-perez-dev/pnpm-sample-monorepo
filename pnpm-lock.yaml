@@ -8,13 +8,13 @@ importers:
 
   .:
     devDependencies:
-      '@bet-tracker/eslint-config':
+      '@pnpm-sample-monorepo/eslint-config':
         specifier: workspace:*
         version: link:packages/config/eslint-config
-      '@bet-tracker/stylelint-config':
+      '@pnpm-sample-monorepo/stylelint-config':
         specifier: workspace:*
         version: link:packages/config/stylelint-config
-      '@bet-tracker/tailwind-config':
+      '@pnpm-sample-monorepo/tailwind-config':
         specifier: workspace:*
         version: link:packages/config/tailwind-config
       '@testing-library/jest-dom':
@@ -111,7 +111,7 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      '@bet-tracker/ui':
+      '@pnpm-sample-monorepo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@swc/jest':

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 
-import { geistSans, geistMono } from '@bet-tracker/ui/fonts/fontLoader';
+import { geistSans, geistMono } from '@pnpm-sample-monorepo/ui/fonts/fontLoader';
 
 import '../styles/global.scss';
 

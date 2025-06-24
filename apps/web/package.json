@@ -20,7 +20,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@bet-tracker/ui": "workspace:*",
+    "@pnpm-sample-monorepo/ui": "workspace:*",
     "@swc/jest": "^0.2.38"
   }
 }

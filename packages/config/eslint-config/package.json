@@ -1,5 +1,5 @@
 {
-  "name": "@bet-tracker/eslint-config",
+  "name": "@pnpm-sample-monorepo/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
   "peerDependencies": {

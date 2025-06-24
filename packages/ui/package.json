@@ -1,12 +1,12 @@
 {
-  "name": "@bet-tracker/ui",
+  "name": "@pnpm-sample-monorepo/ui",
   "version": "1.0.0",
-  "description": "UI components for Bet Tracker",
+  "description": "UI components for Sample Monorepo",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jose-perez-dev/bet-tracker.git",
+    "url": "git@github.com:jose-perez-dev/pnpm-sample-monorepo.git",
     "directory": "packages/ui"
   },
   "scripts": {

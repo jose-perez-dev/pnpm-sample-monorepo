@@ -1,7 +1,7 @@
-# @bet-tracker/ui
+# @pnpm-sample-monorepo/ui
 
-**UI components library for Bet Tracker.**  
-Reusable, atomic-design-based components for use across Bet Tracker applications.
+**UI components library for PNPM Sample Monorepo.**  
+Reusable, atomic-design-based components for use across PNPM Sample Monorepo applications.
 
 ## Requirements
 
@@ -9,13 +9,13 @@ Reusable, atomic-design-based components for use across Bet Tracker applications
 
 ## 📦 Installation
 
-This package is part of the `bet-tracker` monorepo and is **consumed via workspace imports**.
+This package is part of the `pnpm-sample` monorepo and is **consumed via workspace imports**.
 
 ```bash
-pnpm add @bet-tracker/ui
+pnpm add @pnpm-sample-monorepo/ui
 ```
 
-> Note: You must be in the bet-tracker monorepo for this to resolve correctly.
+> Note: You must be in the pnpm-sample monorepo for this to resolve correctly.
 
 ## Quick Start
 
@@ -32,13 +32,13 @@ $ pnpm storybook
 Example import in your Next.js app:
 
 ```tsx
-import { Button } from '@bet-tracker/ui/button/Button';
+import { Button } from '@pnpm-sample-monorepo/ui/button/Button';
 ```
 
 ## 📦 Folder Structure
 
 ```text
-bet-tracker/
+pnpm-sample-monorepo/
 ├── apps/
 │   └── web/         # Frontend app (Next.js)
 ├── packages/

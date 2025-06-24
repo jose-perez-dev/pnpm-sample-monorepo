@@ -1,5 +1,5 @@
 {
-  "name": "@bet-tracker/tailwind-config",
+  "name": "@pnpm-sample-monorepo/tailwind-config",
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.ts",

@@ -1,4 +1,4 @@
-import baseConfig from '@bet-tracker/tailwind-config';
+import baseConfig from '@pnpm-sample-monorepo/tailwind-config';
 
 /** @type {import('tailwindcss').Config} */
 export default {

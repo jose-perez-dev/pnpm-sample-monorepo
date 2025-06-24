@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "@bet-tracker/ui/*": ["./packages/ui/src/*"],
+      "@pnpm-sample-monorepo/ui/*": ["./packages/ui/src/*"],
     }
   },
   "exclude": ["node_modules", "**/node_modules"]

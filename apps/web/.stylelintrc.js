@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@bet-tracker/stylelint-config'],
+  extends: ['@pnpm-sample-monorepo/stylelint-config'],
 };
