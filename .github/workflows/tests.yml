@@ -25,5 +25,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - run: pnpm install --froze-lockfile
       - run: pnpm test:all
