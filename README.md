@@ -3,8 +3,15 @@
 This is a **sample monorepo setup** using [PNPM Workspaces](https://pnpm.io/workspaces), [TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html), and [Turborepo](https://turbo.build/repo).  
 It provides a solid starting point for scalable frontend applications.
 
-> 💡 This repo is not a complete app — it's meant as a clean starting template.
+Bet tracker consists of several sub-packages
 
+* [ui][ui] - Base React components for the Bet Tracker web app
+* [eslint config][eslint] - Eslint base utilitie package used across the monorepo
+* [stylelint config][stylelint] - Base Stylelint configuration used across the monorepo
+* [tailwind config][tailwind] - Base Tailwind CSS configuration used across the monorepo
+* [web][web] - Next.js based application for desktop/mobile web clients
+
+> 💡 This repo is not a complete app — it's meant as a clean starting template.
 
 ## 🚀 Getting Started
 
@@ -27,8 +34,6 @@ pnpm install
 pnpm dev:web
 ```
 
-- `pnpm install`
-- `pnpm build:web`
 - `pnpm dev --filter=web` Start the development server
 - `pnpm build:start` - to see the client running in dev-mode (non-minified; with source-maps)
 
@@ -39,8 +44,8 @@ bet-tracker/
 ├── apps/
 │   └── web/         # Frontend app (Next.js)
 ├── packages/
-│   ├── config/      # Shared lint and TS configuration
-│   └── ui/          # Shared UI components (optional)
+│   ├── config/      # Shared lint and stylelint and tailwind configuration
+│   └── ui/          # Shared UI component library (React)
 ├── turbo.json       # Turborepo pipeline config
 ├── tsconfig.json    # TypeScript base config
 ├── package.json     # Root workspace config
@@ -140,3 +145,10 @@ This command will:
 ## 🤝 Contributions
 
 This is a sample repository, but if you'd like to suggest improvements, PRs are welcome!
+
+
+[ui]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/ui
+[eslint]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/eslint-config
+[stylelint]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/stylelint-config
+[tailwind]: https://github.com/jose-perez-dev/bet-tracker/tree/main/packages/config/tailwind-config
+[web]: https://github.com/jose-perez-dev/bet-tracker/tree/main/apps/web
