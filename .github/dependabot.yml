@@ -1,9 +1,12 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"             # El root del monorepo
+    directory: "/"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "dependabot"
     open-pull-requests-limit: 10
     versioning-strategy: "increase"
     ignore:
@@ -15,8 +18,14 @@ updates:
     directory: "/packages/ui"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "dependabot"
 
   - package-ecosystem: "npm"
     directory: "/apps/web"
     schedule:
       interval: "weekly"
+    labels:
+      - "dependencies"
+      - "dependabot"
