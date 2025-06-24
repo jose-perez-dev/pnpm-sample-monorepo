@@ -15,6 +15,7 @@
     "start:web:dev": "pnpm --filter=web dev",
     "story:ui": "pnpm --filter=@bet-tracker/ui storybook",
     "story:build:ui": "pnpm --filter=@bet-tracker/ui build-storybook",
+    "test:all": "pnpm test:web && pnpm test:ui",
     "test:web": "pnpm --filter=web test",
     "test:ui": "pnpm --filter=@bet-tracker/ui test"
   },
