@@ -20,13 +20,23 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10.11.0
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
+          cache: 'pnpm'
 
-      - run: pnpm install --froze-lockfile
-      - run: pnpm test:all
+      - name: Install dependencies
+        run: pnpm install --froze-lockfile
+
+      - name: Run tests
+        run: pnpm test:all
