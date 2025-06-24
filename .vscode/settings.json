@@ -2,5 +2,9 @@
   "editor.rulers": [140],
   "workbench.colorCustomizations": {
     "editorRuler.foreground": "#ff4081"
-  }
+  },
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" }
+  ]
 }
