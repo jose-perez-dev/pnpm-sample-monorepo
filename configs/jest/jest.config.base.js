@@ -46,9 +46,10 @@ module.exports = {
   moduleNameMapper: {
     '\\.(ico|eot|otf|ttf|woff|woff2|mp4)$': '<rootDir>/__mocks__/fileMock.ts',
     '\\.(jpg|jpeg|png|gif|webp|svg|css|less|scss)$': 'identity-obj-proxy',
+    '^@bet-tracker/ui/(.*)$': '<rootDir>/../../packages/ui/src/$1',
     '^nanoid$': require.resolve('nanoid'),
-    '^next/font/local$': '<rootDir>/__mocks__/mockNextLocalFont.ts',
     '^next/font/google$': '<rootDir>/__mocks__/mockNextLocalFont.ts',
+    '^next/font/local$': '<rootDir>/__mocks__/mockNextLocalFont.ts',
   },
   reporters: [['jest-silent-reporter', { showMargin: true, showPaths: true }]],
 };
