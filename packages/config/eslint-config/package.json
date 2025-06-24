@@ -2,6 +2,9 @@
   "name": "@pnpm-sample-monorepo/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "clean:deep": "pnpm clean && rimraf node_modules"
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",

@@ -11,6 +11,8 @@
   },
   "scripts": {
     "build-storybook": "storybook build",
+    "clean": "rimraf build",
+    "clean:deep": "pnpm clean && rimraf node_modules",
     "lint:code": "TIMING=1 eslint \"src/**/*.{ts,tsx,js,jsx}\"",
     "lint:css": "stylelint \"src/**/*.{style,module}*\"",
     "lint": "pnpm lint:css && pnpm lint:code && pnpm typecheck",

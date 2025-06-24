@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "clean": "rimraf build dist",
+    "clean:deep": "pnpm clean && rimraf node_modules",
     "dev": "next dev",
     "lint:code": "NEXT_LINT=true next lint -d src",
     "lint:css": "stylelint \"src/**/*.{style,module}*\"",
     "lint": "pnpm lint:code && pnpm lint:css && pnpm typecheck",
     "prod": "pnpm build && pnpm start",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
+    "test:watch": "pnpm test --watch",
     "test": "jest --coverage --colors",
-    "test:watch": "pnpm test --watch"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "15.3.2",

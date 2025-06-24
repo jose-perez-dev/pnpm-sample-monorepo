@@ -4,5 +4,8 @@
   "description": "",
   "main": "tailwind.config.ts",
   "license": "MIT",
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "clean:deep": "pnpm clean && rimraf node_modules"
+  }
 }
