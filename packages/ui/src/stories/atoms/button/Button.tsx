@@ -1,7 +1,8 @@
 import React from 'react';
+import clsx from 'clsx';
 
-import './Button.module.scss';
 import IButtonProps from './IButton';
+import styles from './Button.module.scss';
 
 /** Primary UI component for user interaction */
 function Button ({
@@ -11,11 +12,17 @@ function Button ({
   label,
   ...props
 }: IButtonProps): React.JSX.Element {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={clsx(
+        styles['storybook-button'],
+        styles[`storybook-button--${size}`],
+        {
+          [styles['storybook-button--primary']]: primary,
+          [styles['storybook-button--secondary']]: !primary,
+        }
+      )}
       style={{ backgroundColor }}
       {...props}
     >

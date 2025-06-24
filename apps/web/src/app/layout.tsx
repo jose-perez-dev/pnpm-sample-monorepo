@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import clsx from 'clsx';
 
 import { geistSans, geistMono } from '@pnpm-sample-monorepo/ui/fonts/fontLoader';
 
@@ -21,7 +22,7 @@ export default async function RootLayout({
   return (
     <html lang={lang}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={clsx(`${geistSans.variable}`, `${geistMono.variable}`, 'antialiased')}
       >
         {children}
       </body>
