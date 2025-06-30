@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "clean:deep": "pnpm clean && rimraf node_modules"
+    "clean:deep": "rimraf node_modules"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.32.1",
