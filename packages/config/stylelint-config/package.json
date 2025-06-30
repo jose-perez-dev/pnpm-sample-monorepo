@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "clean:deep": "pnpm clean && rimraf node_modules"
+    "clean:deep": "rimraf node_modules"
   },
   "peerDependencies": {
     "stylelint-config-recommended-scss": "^9.0.0",
