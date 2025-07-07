@@ -54,7 +54,7 @@
     "rimraf": "^6.0.1",
     "sass": "^1.89.2",
     "stylelint": "^15.11.0",
-    "stylelint-config-recommended": "^10.0.0",
+    "stylelint-config-recommended": "^13.0.0",
     "stylelint-config-recommended-scss": "^9.0.0",
     "stylelint-config-tailwindcss": "^1.0.0",
     "stylelint-order": "^6.0.0",
