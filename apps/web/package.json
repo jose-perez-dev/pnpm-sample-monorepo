@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "@pnpm-sample-monorepo/ui": "workspace:*",
-    "@swc/jest": "^0.2.38"
+    "@swc/jest": "^0.2.39"
   }
 }
